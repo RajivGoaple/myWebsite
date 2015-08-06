@@ -1,7 +1,7 @@
 @font-face { 
-  font-family: News Cycle; 
-    src: url('../fonts/NewsCycle-Regular.eot'); 
-    src: local("News Cycle"), url('../fonts/NewsCycle-Regular.ttf'); 
+  font-family: PacificoRegular; 
+    src: url('../fonts/Pacifico-webfont.eot'); 
+    src: local("PacificoRegular"), url('../fonts/Pacifico-webfont.ttf'); 
 } 
 
 html
@@ -24,6 +24,7 @@ article, aside, figure, footer, header, hgroup, nav, section {
 p
 { padding: 0 0 10px 0;
   color: #FFF;
+  text-shadow: 1px 1px #000;
   line-height: 1.7em;
   font-size: 100% }
 
@@ -31,37 +32,38 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: bold 175% 'News Cycle', Arial, sans-serif;
-  color: #fff;
-  text-shadow: 1px 1px #000;
+{ font: normal 175% 'PacificoRegular', Arial, sans-serif;
+  color: #FFF;
+  text-shadow: 0px 1px 0px #000;
   letter-spacing: -1px;
   margin: 0 0 10px 0;}
 
 h2
-{ font: bold 165% 'News Cycle', Arial, sans-serif;}
+{ font: normal 165% Arial, Helvetica, sans-serif;}
 
 h3
-{ font: bold 130% 'News Cycle', Arial, sans-serif;}
+{ font: normal 130% Arial, Helvetica, sans-serif;}
 
 h4, h5, h6
 { margin: 0;
   padding: 0 0 0px 0;
-  font: normal 150% 'News Cycle', Arial, sans-serif;
+  font: normal 150% Arial, Helvetica, sans-serif;
   color: #FFF;
   line-height: 1.5em;}
 
 h5, h6
-{ font: normal 95% 'News Cycle', Arial, sans-serif;
+{ font: normal 95% Arial, Helvetica, sans-serif;
   color: #888;
   padding-bottom: 15px;}
   
 span
-{ color: #FFF;
-  text-shadow: 1px 1px #fff;}
+{ color: #43A9FF;
+  text-shadow: 0px 1px 0px #FFF;}
 
 a, a:hover
 { color: #FFF;
   background: transparent;
+  font-weight: bold;
   outline: none;
   text-decoration: underline;}
 
@@ -85,52 +87,47 @@ ol li
   margin-right: auto;}
 
 #main
-{ background: #1D1D1D url(../images/pattern.png) repeat;}
+{ padding: 30px 0px;
+  background: transparent url(../images/background.png) no-repeat;}
   
 header
-{ background: #1D1D1D url(../images/pattern.png) repeat;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}
-
-#banner
-{ width: 940px;
-  position: relative;
-  padding: 15px 0 0 0;
-  background: transparent;
-  height: 120px;}
+{ height: 120px;
+  width: 940px;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#F1F1F1, #000000);
+  border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 15px 15px 0px 0px;
+  -webkit-border: 15px 15px 0px 0px;  }
  
 nav
-{ width: 940px;
-  height: 50px;}  
+{ height: 50px;}  
   
 #menubar
 { width: 940px;
   height: 50px;
-  float: left;
   text-align: center; 
-  background: #0043A8;
-  background: -moz-linear-gradient(#43A9FF, #0043A8);
-  background: -o-linear-gradient(#43A9FF, #0043A8);
-  background: -webkit-linear-gradient(#43A9FF, #0043A8);
-  border-radius: 7px 7px 0px 0px;
-  -moz-border-radius: 7px 7px 0px 0px;
-  -webkit-border: 7px 7px 0px 0px;} 
+  margin: 0 auto;}  
   
-#welcome
-{ width: 880px;
-  float: left;
+#strapline
+{ width: 940px;
   height: 60px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 0 0 10px 20px;
-  background: transparent;} 
-   
-#welcome h2
-{ font: normal 500% 'News Cycle', Arial, sans-serif;
+  padding-bottom: 10px;
+  text-align: center; 
+  margin: 0 auto;} 
+  
+#welcome_slogan
+{ width: 940px;
+  float: left;
+  height: 50px;
+  margin: 0 auto;}    
+  
+#welcome_slogan H3
+{ font: normal 275% 'PacificoRegular', Arial, sans-serif;
   letter-spacing: -2px;
-  text-shadow: 1px 1px #000;
-  color: #FFF;}
+  text-shadow: 0px 1px 0px #FFF;
+  color: #0055D4;} 
   
 ul#nav
 { margin:0;}
@@ -144,11 +141,11 @@ ul#nav li
 
 ul#nav li a
 { float: left;
-  font: bold 120% Arial, Helvetica, sans-serif;
+  font: bold 130% 'PacificoRegular', Arial, sans-serif;
   height: 24px;
-  margin: 10px 0 0 20px;
-  text-shadow: 1px 1px #000;
-  padding: 6px 20px 0 20px;
+  margin: 8px 0 0 20px;
+  text-shadow: 0px 1px 0px #000;
+  padding: 0px 20px 10px 20px;
   background: transparent; 
   border-radius: 7px 7px 7px 7px;
   -moz-border-radius: 7px 7px 7px 7px;
@@ -158,17 +155,24 @@ ul#nav li a
   text-decoration: none;} 
   
 ul#nav li.current a, ul#nav li:hover a
-{ color: #002256; 
-  text-shadow: 1px 1px #43A9FF;}
+{ color: #FFF;
+  background: #0055D4;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  text-shadow: none;}
 
 #site_content
 { width: 940px;
   overflow: hidden;
   margin-bottom: 30px;
-  background: #323232;
-  border-radius: 0px 0px 7px 7px;
-  -moz-border-radius: 0px 0px 7px 7px;;
-  -webkit-border: 0px 0px 7px 7px;} 
+  background: transparent url(../images/transparent.png) repeat;
+  border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -webkit-border: 0px 0px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;} 
 
 .sidebar_container
 { float: right;
@@ -183,17 +187,13 @@ ul#nav li.current a, ul#nav li:hover a
   margin-bottom: 10px;}
 
 .sidebar_item
-{ width: 190px;}
+{ font: normal 100% Arial, Helvetica, sans-serif;
+  width: 190px;}
 
 .sidebar h2
 { padding: 5px 0 0 0;
-  font: bold 150% 'News Cycle', Arial, sans-serif;
-  height: 30px;
-  text-shadow: 1px 1px #000;
-  color: #43A9FF;}
-
-.sidebar h3
-{ color: #FFF;}  
+  font: normal 140% 'PacificoRegular', Arial, sans-serif;
+  height: 30px;}  
 
 #content
 { width: 680px;
@@ -204,52 +204,58 @@ ul#nav li.current a, ul#nav li:hover a
 { width: 680px;
   margin-top: 20px;
   margin-bottom: 20px;}
- 
-.content_imagetext
-{ width: 680px;
-  padding: 5px;
-  margin: 20px 0 0 0;
-  float: left;}
- 
-.content_image
-{ float: left; 
-  width: 150px;
-  height: 150px;
-  margin: 0 20px 10px 0;}
   
 .content_container
-{ width: 320px;
-  padding: 5px;
+{ width: 330px;
   margin: 20px 10px 0 0;
   float: left;}
   
 footer
-{ height: 50px;
-  padding-bottom: 30px;
+{ width: 940px;
+  height: 50px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   font-weight: bold;
   text-align: center; 
   text-shadow: 1px 1px #000;
-  color: #FFF;}
+  color: #FFF;
+  background: #0043A8;
+  background: -moz-linear-gradient(#43A9FF, #0043A8);
+  background: -o-linear-gradient(#43A9FF, #0043A8);
+  background: -webkit-linear-gradient(#43A9FF, #0043A8);
+  border-radius: 15px 15px 15px 15px;
+  -moz-border-radius: 15px 15px 15px 15px;
+  -webkit-border: 15px 15px 15px 15px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;}
 
-footer a
-{ color: #FFF;
+footer a, footer a:hover
+{ text-shadow: 1px 1px #FFF;
+  color: #1D1D1D;
   text-decoration: none;
   padding-bottom: 20px;}
 
 footer a:hover
-{ text-decoration: underline;
-  color: #FFF;}
+{ text-decoration: underline;}
 
+footer a, footer a:hover
+{ text-shadow: 1px 1px #000;
+  color: #FFF;
+  text-decoration: none;}
+
+footer a:hover
+{ text-decoration: underline;}
+  
  .readmore a
 { color: #FFF;
   text-shadow: 1px 1px #004C8C;}
  
  .button_small
 { font: normal 110% Arial, Helvetica, sans-serif;
+  float: left;
   height: 15px;
-  width: 80px;
-  padding: 5px 2px 7px 2px;
-  border: 1px solid #FFF; 
+  padding: 5px 10px 7px 8px;
   background: #0043A8;
   background: -moz-linear-gradient(#43A9FF, #0043A8);
   background: -o-linear-gradient(#43A9FF, #0043A8);
@@ -264,7 +270,7 @@ footer a:hover
 .button_small a
 { color: #FFF;
   padding-left: 5px;
-  text-shadow: 1px 1px #004C8C;}
+  text-shadow: 1px 1px #000;}
 
 .form_settings
 { margin: 15px 0 0 0;}
@@ -276,7 +282,9 @@ footer a:hover
 { float: left; 
   width: 280px; 
   text-align: left;
-  text-shadow: none;}
+  text-shadow: none;
+  color: #FFF;
+  text-shadow: 1px 1px #000;}
   
 .form_settings input, .form_settings textarea
 { padding: 2px; 
@@ -307,27 +315,27 @@ footer a:hover
   background: -moz-linear-gradient(#43A9FF, #0043A8);
   background: -o-linear-gradient(#43A9FF, #0043A8);
   background: -webkit-linear-gradient(#43A9FF, #0043A8);
-  border-radius: 15px 15px 15px 15px;
-  -moz-border-radius: 15px 15px 15px 15px;
-  -webkit-border: 15px 15px 15px 15px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  color: #FFF;}
+  color: #FFF;
+  border-radius: 7px 7px 7px 7px;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border: 7px 7px 7px 7px;}
 
 .slideshow
-{ width: 940px;
-  height: 300px;
-  float: left;}  
+{  width: 680px;
+  height: 250px;
+  margin-left: 20px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;}  
   
 /* styling for the slideshow on the homepage */
 ul.slideshow {
   list-style: none;
-  width: 940px;
-  height: 300px;
+  width: 680px;
+  height: 250px;
   overflow: hidden;
   position: relative;
-  margin: 0;}
+  margin: 20px 0 0 0;}
   
 ul.slideshow li {
   position: absolute;
@@ -343,7 +351,7 @@ ul img {
   border: none;}
  
 #slideshow-caption {
-  width: 940px;
+  width: 680px;
   height: 38px;
   position: absolute;
   bottom: 0;
@@ -360,5 +368,4 @@ ul img {
   font: normal 130% arial, sans-serif;
   color: #FFF;
   text-shadow: 1px 1px #000;}
- 
  
